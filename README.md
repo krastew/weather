@@ -1,6 +1,6 @@
 # Weather script
 
-#Description
+Description
 This bash script is used to query https://www.apixu.com/api.aspx API service and get information regarding expected rain (precipitation) or UV index for the current day.
 
 Command-line usage:
@@ -18,8 +18,11 @@ Command-line usage:
 Examples:
 
 /bin/bash weather.sh rain San Francisco
+
 /bin/bash weather.sh uv 195.34.101.1
+
 /bin/bash weather.sh rain
 
 Docker usage:
-docker run
+sudo docker build -t weather .
+sudo docker run -it weather
